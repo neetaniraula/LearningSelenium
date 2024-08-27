@@ -13,6 +13,18 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
 				<configuration>
@@ -53,6 +65,21 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.23.1</version>
 		</dependency>
+
+		<!-- SLF4J API dependency -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+
+		<!-- SLF4J Log4j Binding dependency -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
