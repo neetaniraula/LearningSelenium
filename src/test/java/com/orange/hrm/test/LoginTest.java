@@ -11,11 +11,11 @@ import com.utility.ExcelUtility;
 public class LoginTest extends BaseTest{
 	
 	@Test
-	public void loginWithValidUserNameAndValidPassword() throws InvalidFormatException, IOException {
-		
+	public void loginWithValidUserNameAndValidPassword() {
+
 		LoginPage loginPage = new LoginPage();
-		
-		loginPage.loginToApplication(ExcelUtility.getTestData(1, 0),ExcelUtility.getTestData(1, 1));
+
+		loginPage.loginToApplication("Admin", "admin123");
 	}
 
 }

@@ -12,7 +12,7 @@ public class ExcelUtility {
 	
 
 
-	public static String getTestData(int rowNumber,int cellNumber) throws InvalidFormatException, IOException {
+	public static void getTestData(int rowNumber,int cellNumber) throws InvalidFormatException, IOException {
 		
 		//Create File class object
 		File file = new File("C:\\Users\\neeta\\OneDrive\\Desktop\\TestData.xlsx");
